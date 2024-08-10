@@ -1,0 +1,71 @@
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button {
+  position: relative;
+  border: 0;
+  background-color: #d2d2d2;
+  font-size: 24px;
+  padding: 20px;
+  margin: 20px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.25s ease-in-out;
+  overflow: hidden;
+}
+
+/*  First Button */
+
+.button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.button:hover span {
+  color: white;
+}
+
+.button.first::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #1661d0;
+  border-radius: 50%;
+  transform: translate(calc(-50% - 20px), calc(-50% - 20px));
+  transition: width 0.4s ease, height 0.4s ease;
+  overflow: hidden;
+}
+
+.button.first:hover::before {
+  width: 500px;
+  height: 500px;
+}
+
+/* First Button end */
+
+.button.second::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #1661d0;
+  border-radius: 50%;
+  bottom: -230px;
+  right: -230px;
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.button.second:hover::before {
+  width: 500px;
+  height: 500px;
+}

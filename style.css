@@ -1,0 +1,165 @@
+body {
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/001/826/622/small/old-wooden-background-free-photo.jpg")
+    repeat;
+}
+
+.wapper {
+  width: 300px;
+  height: 300px;
+  border: 1px dashed red;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  /* transform: translate(-50px);
+  transform: translate(0, -50px);
+  transform: translate(50px, 50px);
+  transform: translateY(100px); */
+  /* transform: scale(2, 2); */
+  /* transform: scale(1.5); */
+  /* transform: scaleX(0.5);
+  transform: scaleY(1.5); */
+  /* transform: rotate(-5deg); */
+  /* transform: rotate(5grad); */
+  /* transform: rotate(1rad); */
+  /* transform: rotate(-0.3turn); */
+  /* transform: skewX(10deg); */
+  /* transform: skew(10deg, 20deg); */
+  /* transform-origin: center bottom; */
+  transform: rotate(20deg);
+  transform: translate(20px, 20px);
+  transform: scale(1.5);
+  transform: rotate(20deg) translate(20px, 20px) scale(1.5);
+}
+
+.polaroid-gallery {
+  text-align: center;
+}
+
+.polaroid-gallery-title {
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+.polaroid-card {
+  display: inline-block;
+  background: #eee6d8;
+  padding: 10px;
+  box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.7);
+}
+
+.polaroid-card-caption {
+  font-family: "Marker Felt", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.polaroid-card:nth-of-type(even) {
+  transform: rotate(12deg);
+}
+
+.polaroid-card:nth-of-type(odd) {
+  transform: rotate(-12deg);
+}
+
+.polaroid-card:nth-of-type(even)::before {
+  content: "";
+  display: block;
+  background-color: rgba(222, 220, 220, 0.66);
+  width: 100px;
+  height: 25px;
+  transform: rotate(-24deg) translate(-30px, -25px);
+}
+
+.polaroid-card:nth-of-type(odd)::before {
+  content: "";
+  display: block;
+  background-color: rgba(222, 220, 220, 0.66);
+  width: 100px;
+  height: 25px;
+  transform: translate(140px, -10px) rotate(30deg);
+}
+
+.polaroid-card:nth-of-type(1) {
+  transition: transform 0.75s;
+}
+
+.polaroid-card:nth-of-type(1):hover {
+  transform: rotate(360deg) scale(1.25);
+}
+
+.polaroid-card:nth-of-type(2) {
+  transition: transform 0.75s;
+}
+
+.polaroid-card:nth-of-type(2):hover {
+  transform: scale(1.5);
+}
+
+.polaroid-card:nth-of-type(3) {
+  transition: transform 0.75s;
+}
+
+.polaroid-card:nth-of-type(3):hover {
+  transform: scale(1.1) skewY(20deg);
+}
+
+.polaroid-card:nth-of-type(4) {
+  transition: transform 0.75s;
+}
+
+.polaroid-card:nth-of-type(4):hover {
+  transform: scale(1.1) skewY(20deg) rotate(10deg) translate(-50px);
+}
+
+/* .transition {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  margin: 0 auto;
+  transition-property: background-color, width, height;
+  transition-duration: 2s, 1s, 0.5s;
+}
+
+.transition:hover {
+  width: 200px;
+  height: 100px;
+  background-color: blue;
+} */
+
+/* .transition {
+  color: white;
+  background-color: red;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  transition-property: margin-left;
+  transition-duration: 2s;
+}
+
+.container:hover .transition {
+  margin-left: 50%;
+}
+
+.cubic {
+  transition-timing-function: cubic-bezier(0.99, 0.5, 0.44, 0.53);
+} */
+
+/* .together {
+  width: 200px;
+  height: 35px;
+  background-color: red;
+  transition: width 1.25s, trasnform 1.25s, height;
+}
+
+.together-container:hover .together {
+  transform: translateX(500px);
+  width: 400px;
+  height: 100px;
+} */
